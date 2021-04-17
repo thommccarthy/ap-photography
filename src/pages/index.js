@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import tachyons from "tachyons"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -26,6 +27,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
+
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
